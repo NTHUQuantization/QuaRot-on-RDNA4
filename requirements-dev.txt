@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==9.0.2
+ninja==1.13.0
+setuptools==79.0.1
+wheel

@@ -1,0 +1,26 @@
+{
+  "upstream_repository": "https://github.com/NTHUQuantization/QuaRot_Version",
+  "upstream_commit": "6c30374901038138ac5094e6eaed35a5ca35db2f",
+  "upstream_file": "quarot/kernels/hadamard.hip",
+  "upstream_sha256": "22aaa88e38c6d031b61e9a7079e06bf825223f8b606e34859c40635b436ba4c2",
+  "retained_widths": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "retained_dtypes": [
+    "float16",
+    "bfloat16"
+  ],
+  "preserved_blocks": {
+    "device_helpers_and_small_warp": "51bc8eb6e11af2018c91f88c1830c03d18fb74cc0d165acfc601e47073bbb603",
+    "warp_register_body_and_wrapper_macro": "5c622a729e9680fcc646f643bc204f186f7b2523b1a7e28e3032d447497051a1",
+    "small_warp_launch": "db0d1fc27dcb119b0705eb85b1d65a0db74e0f36439bb772f1ed4a0e5a576e80"
+  },
+  "packaging_changes": [
+    "Independent quarot_wave_fht extension binding.",
+    "Only the four selected widths are instantiated and accepted.",
+    "Original eight-wave row grid, launch dimensions, arithmetic, conversion and scaling order are retained."
+  ]
+}

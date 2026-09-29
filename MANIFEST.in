@@ -1,0 +1,10 @@
+include LICENSE README.md README.zh-TW.md THIRD_PARTY_NOTICES.md
+include requirements.txt requirements-dev.txt
+recursive-include quarot/kernels *.h *.cuh *.cpp *.hip
+recursive-include third-party/hadacore *.py *.hip
+recursive-include docs *.md
+recursive-include docs *.json
+recursive-include licenses *.txt
+recursive-include components/wave *.py *.cpp *.hip *.h *.md *.json
+recursive-include tests *.py
+exclude quarot/kernels/gemm_hip.hip quarot/kernels/quant_hip.hip

@@ -1,0 +1,2 @@
+# Preserve the retained sources byte-for-byte, including original line endings.
+* -text
